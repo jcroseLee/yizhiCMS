@@ -1,0 +1,12 @@
+.logo {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.ant-layout-sider-collapsed .logo h2 {
+  font-size: 18px;
+}
+

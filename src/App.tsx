@@ -31,6 +31,8 @@ import { Settlements } from './pages/Settlements'
 import { Escrow } from './pages/Escrow'
 import { PaymentTransactions } from './pages/PaymentTransactions'
 import { RiskControl } from './pages/RiskControl'
+import { CommunitySections } from './pages/CommunitySections'
+import { CommunitySubsections } from './pages/CommunitySubsections'
 import './App.css'
 
 const { Header, Sider, Content } = Layout
@@ -56,6 +58,16 @@ const AppLayout: React.FC = () => {
       key: '/posts',
       icon: <FileTextOutlined />,
       label: '帖子管理',
+    },
+    {
+      key: '/community-sections',
+      icon: <AppstoreOutlined />,
+      label: '社区分类',
+    },
+    {
+      key: '/community-subsections',
+      icon: <AppstoreOutlined />,
+      label: '版块分区',
     },
     {
       key: '/comments',
@@ -137,6 +149,8 @@ const AppLayout: React.FC = () => {
             <Route path="/modules" element={<Modules />} />
             <Route path="/masters" element={<Masters />} />
             <Route path="/posts" element={<Posts />} />
+            <Route path="/community-sections" element={<CommunitySections />} />
+            <Route path="/community-subsections" element={<CommunitySubsections />} />
             <Route path="/comments" element={<Comments />} />
             <Route path="/users" element={<Users />} />
             <Route path="/records" element={<Records />} />

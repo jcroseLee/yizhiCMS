@@ -45,6 +45,10 @@ export interface Post {
   title: string
   content: string
   content_html: string | null
+  section?: 'study' | 'help' | 'casual' | 'announcement'
+  status?: 'published' | 'pending' | 'hidden' | 'rejected'
+  is_pinned?: boolean
+  is_featured?: boolean
   view_count: number
   like_count: number
   comment_count: number
